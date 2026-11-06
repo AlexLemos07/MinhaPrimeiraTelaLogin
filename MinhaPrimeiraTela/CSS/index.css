@@ -1,0 +1,131 @@
+/* ==========================================
+   1. Configurações Globais e Layout Base
+   ========================================== */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: #BAC7D3;
+  color: #000;
+}
+                                             
+#login {
+  text-align: center;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.caixa img {
+  width: 350px;
+  margin-bottom: 15px;
+}
+
+.caixa h1 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #000;
+}
+
+/* ==========================================
+   2. Campos de Entrada (Inputs e Placeholders)
+   ========================================== */
+/* Containers dos campos de login e senha */
+.email,
+.senha {
+  position: relative; /* Permite posicionar os labels absolutos em relação a estes containers */
+  width: 350px; /* Largura total do grupo (input + label visualmente) */
+  margin-left: 4.5px; /* Empurra os campos para o centro da caixa */
+}
+
+/* Espaçamento extra abaixo do container de login */
+.email {
+  margin-bottom: 1.1vw; 
+}
+
+/* Estilo dos textos dos rótulos (Labels: ex. "Email", "Senha") */
+label.email,
+label.senha {
+  position: absolute; /* Posiciona o label fora do fluxo normal do documento */
+  top: 0; /* Alinha ao topo do seu container */
+  left: -4.6vw; /* Joga o texto do label para o lado esquerdo do input */
+  width: 4.04vw; /* Largura fixa do texto do label */
+  margin: 0; /* Zera margens */
+  line-height: 3.49vw; /* Centraliza o texto verticalmente acompanhando a altura do input */
+  text-align: center; /* Centraliza o texto do label */
+  font-size: 1.29vw; /* Tamanho da fonte */
+  color: #000; /* Cor branca */
+}
+
+/* Estilo dos campos de digitação (Inputs) */
+.form-input {
+  display: block; /* Garante que o input ocupe sua própria linha na estrutura visual */
+  width: 17.81vw; /* Largura do input */
+  height: 2.49vw; /* Altura do input */
+  background-color: #ffffff; /* Fundo branco para digitação */
+  border: 2px solid #000000; /* Borda preta de 2px */
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  padding: -10.92vw; /* Espaçamento interno lateral para o texto não colar nas bordas */
+  font-family: 'Inter', sans-serif; /* Define a fonte */
+  align-self: center;
+  font-size: 1.29vw; /* Tamanho do texto digitado */
+  color: #000000; /* Cor do texto digitado (preto) */
+  outline: none; /* Remove a borda de destaque azul padrão dos navegadores ao clicar no campo */
+}
+/* ==========================================
+   3. Botões e Ações (Entrar)
+   ========================================== */
+.entrar input {
+  cursor: pointer;
+  width: 350px;
+  height: 50px;
+  border-radius: 5px;
+  border: 3px solid;
+  border-color: #6A6A6A;
+  background-color: #3BE8ED;
+  color: #000;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.entrar p {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #000;
+}
+
+.entrar p a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+}
+
+/* ==========================================
+   4. Recuperação de Senha / Rodapé
+   ========================================== */
+.recuperacao-senha {
+  position: fixed;
+  bottom: 25px;
+  width: 100%;
+}
+
+.recuperacao-senha p {
+  margin-top: 20px;
+  font-size: 25px;
+  color: #000;
+}
+
+.recuperacao-senha p a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Instalação da fonte Inter - Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+ 
+ <!-- Conecta o html ao css-->
+    <link rel="stylesheet" href="./css/index.css">
+
+  <title>Login</title>
+</head>
+
+<body>
+  <!--  <h1>Hello, World!</h1> --> <!-- SHIFT + ALT = A -->
+  <div id="login">
+    <!-- A caixa que contem os elementos do HTML -->
+    <div class="caixa">
+      <!-- Estes são os elementos do HTML -->
+      <img src="./img/SOMELBLACK.png" alt="SOMELBLACK">
+      <!-- Elemento de imagem -->
+      <h1>Login</h1>
+      <!-- Elemento de Título de nível 1 (usar só 1 vez)-->
+      <div class="email"><!-- Campo (input) do Email-->
+        <label for="input-do-Login" class="email">Login 
+        </label>
+        <input type="email" id="input-do-Login" name="email" class="form-input">
+      </div>
+      <div class="senha"> <!-- Campo (input) do Senha-->
+       <label for="senha-input" class="senha">Senha 
+        </label>
+        <input type="email" id="senha-input" name="senha" class="form-input">
+      </div>
+
+      <div class="entrar"> <!-- Botão Entrar (submit) -->
+        <input type="submit" value="Entrar">
+        <p>Não possui conta? <a href="./cadastro.html"> Cadastre-se</a></p>
+      </div>
+
+      <div class="recuperacao-senha"> <!-- Link Recuperação de senha -->
+        <p>Esqueceu sua senha? <a href="./recuperacao.html">Recupere Aqui</a></p>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
